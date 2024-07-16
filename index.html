@@ -1,0 +1,2450 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBIK WEBHOOK MANAGER</title>
+    <meta name="description" content="An easy-to-use tool for building and sending Discord messages and embeds using webhooks.">
+    <meta property="og:title" content="Webhook Manager | A message and embed generator for Discord webhooks">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/static/icon-256.png?1">
+    <meta property="og:url" content="https://Webhook Manager.org/">
+    <meta property="og:description" content="An easy-to-use tool for building and sending Discord messages and embeds using webhooks.">
+    <meta property="og:site_name" content="Webhook Manager">
+    <link rel="canonical" href="https://Webhook Manager.org/">
+    <link rel="shortcut icon" href="favicon.ico?1" sizes="16x16 32x32" type="image/x-icon">
+    <link rel="icon" href="static/favicon-16.png?1" sizes="16x16" type="image/png">
+    <link rel="icon" href="static/favicon-32.png?1" sizes="32x32" type="image/png">
+    <link rel="icon" href="static/favicon.svg?1" sizes="any" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="static/icon-64.png?1" sizes="64x64" type="image/png">
+    <link rel="apple-touch-icon" href="static/icon-96.png?1" sizes="96x96" type="image/png">
+    <link rel="apple-touch-icon" href="static/icon-128.png?1" sizes="128x128" type="image/png">
+    <link rel="apple-touch-icon" href="static/icon-192.png?1" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="static/icon-256.png?1" sizes="256x256" type="image/png">
+    <link rel="apple-touch-icon" href="static/icon.svg?1" sizes="any" type="image/svg+xml">
+    <link rel="mask-icon" href="static/mask-icon.svg?1" type="image/svg+xml">
+    <link rel="manifest" href="static/manifest.webmanifest?1">
+    <meta name="application-name" content="Webhook Manager">
+    <meta name="theme-color" content="#58b9ff">
+    <meta name="color-scheme" content="dark light">
+    <meta name="google" content="notranslate">
+    <meta name="referrer" content="strict-origin">
+    <meta name="next-head-count" content="28">
+    <link rel="preload" href="_next/static/chunks/main-b6c5840234b7d38172f7.js" as="script">
+    <link rel="preload" href="_next/static/chunks/webpack-f5dfe165f2a3e24f0847.js" as="script">
+    <link rel="preload" href="_next/static/chunks/framework.75810db27f2a2d2744b3.js" as="script">
+    <link rel="preload" href="_next/static/chunks/8313d723.1a9c1286488da8c7d802.js" as="script">
+    <link rel="preload" href="_next/static/chunks/commons.917a580f5043169d79fd.js" as="script">
+    <link rel="preload" href="_next/static/chunks/94e22a879ea83b0add8306b461de6417e3d648d6.e377f285cb343095366e.js" as="script">
+    <link rel="preload" href="_next/static/chunks/pages/_app-1f4b408f16b779ed372e.js" as="script">
+    <link rel="preload" href="_next/static/chunks/pages/index-03121bd5e805b76d2178.js" as="script">
+    <style data-styled="" data-styled-version="5.1.1">
+      .ftXluy {
+        max-width: 520px;
+        display: grid;
+        background: #2f3136;
+        border-radius: 4px;
+        border-left: 4px solid #202225;
+      }
+
+      /*!sc*/
+      data-styled.g1[id="sc-1yfe1q7-0"] {
+        content: "ftXluy,"
+      }
+
+      /*!sc*/
+      .cAQIzs {
+        min-width: 60px;
+        min-height: 32px;
+        max-height: 32px;
+        margin: 8px;
+        padding: 2px 15px;
+        background: none;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+        color: #7289da;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        -webkit-transition: 167ms;
+        transition: 167ms;
+        background: #7289da;
+        border-color: #7289da;
+        color: #fff;
+      }
+
+      /*!sc*/
+      .cAQIzs:hover:not(:disabled),
+      .cAQIzs:focus:not(:disabled) {
+        background: #667bc4;
+        border-color: #667bc4;
+      }
+
+      /*!sc*/
+      .cAQIzs:active:not(:disabled) {
+        background: #5b6dae;
+        border-color: #5b6dae;
+      }
+
+      /*!sc*/
+      .cAQIzs:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+
+      /*!sc*/
+      .rweje6-0 .cAQIzs {
+        margin: 0 0 0 16px;
+      }
+
+      /*!sc*/
+      data-styled.g4[id="d6epy7-0"] {
+        content: "cAQIzs,"
+      }
+
+      /*!sc*/
+      .RmGSX {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        width: 50%;
+        pointer-events: none;
+      }
+
+      /*!sc*/
+      data-styled.g10[id="sc-1tupvqf-0"] {
+        content: "RmGSX,"
+      }
+
+      /*!sc*/
+      .fHrToZ {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 8px 8px;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+      }
+
+      /*!sc*/
+      .sc-9w0ppr-0 .fHrToZ {
+        margin: 0 0 4px;
+      }
+
+      /*!sc*/
+      data-styled.g15[id="sc-1h2kmjy-0"] {
+        content: "fHrToZ,"
+      }
+
+      /*!sc*/
+      .eiGELQ {
+        margin-top: 8px;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        white-space: nowrap;
+      }
+
+      /*!sc*/
+      .sc-9w0ppr-0 .eiGELQ {
+        margin: 0 0 8px;
+      }
+
+      /*!sc*/
+      data-styled.g16[id="sc-1h2kmjy-1"] {
+        content: "eiGELQ,"
+      }
+
+      /*!sc*/
+      .fNcbAb {
+        margin-top: 4px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+      }
+
+      /*!sc*/
+      .sc-9w0ppr-0 .fNcbAb {
+        margin: 0 4px 4px;
+      }
+
+      /*!sc*/
+      data-styled.g17[id="sc-1h2kmjy-2"] {
+        content: "fNcbAb,"
+      }
+
+      /*!sc*/
+      .fsgmdW {
+        padding: 0;
+        margin: 4px 0 0 16px;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        white-space: nowrap;
+      }
+
+      /*!sc*/
+      .fsgmdW:hover,
+      .fsgmdW:focus {
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+      }
+
+      /*!sc*/
+      .sc-9w0ppr-0 .fsgmdW {
+        margin: 0 0 4px 16px;
+      }
+
+      /*!sc*/
+      data-styled.g18[id="sc-1h2kmjy-3"] {
+        content: "fsgmdW,"
+      }
+
+      /*!sc*/
+      .kaKJzK {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 8px 8px 0;
+      }
+
+      /*!sc*/
+      data-styled.g19[id="gssc5a-0"] {
+        content: "kaKJzK,"
+      }
+
+      /*!sc*/
+      .bnXoKL {
+        margin-bottom: 2px;
+        font-size: 16px;
+      }
+
+      /*!sc*/
+      data-styled.g20[id="sc-1l3alj9-0"] {
+        content: "bnXoKL,"
+      }
+
+      /*!sc*/
+      .eOsxHn {
+        padding: 6px 8px;
+        margin: 8px 0;
+        background: #40444b;
+        border: none;
+        border-radius: 3px;
+        outline: none;
+        color: #dcddde;
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      /*!sc*/
+      .eOsxHn:focus {
+        box-shadow: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
+      }
+
+      /*!sc*/
+      data-styled.g21[id="rvocnm-0"] {
+        content: "eOsxHn,"
+      }
+
+      /*!sc*/
+      .fjSbfQ {
+        padding: 6px 8px;
+        margin: 8px 0;
+        background: #40444b;
+        border: none;
+        border-radius: 3px;
+        outline: none;
+        color: #dcddde;
+        font-size: 15px;
+        line-height: 20px;
+        resize: vertical;
+        min-height: 32px;
+      }
+
+      /*!sc*/
+      .fjSbfQ:focus {
+        box-shadow: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
+      }
+
+      /*!sc*/
+      data-styled.g23[id="yr0gsk-0"] {
+        content: "fjSbfQ,"
+      }
+
+      /*!sc*/
+      .hiHPcS {
+        padding: 6px 8px;
+        margin: 8px 0;
+        background: #40444b;
+        border: none;
+        border-radius: 3px;
+        outline: none;
+        color: #dcddde;
+        font-size: 15px;
+        line-height: 20px;
+        resize: vertical;
+        min-height: 32px;
+        min-height: 240px;
+        font-size: 14px;
+        font-family: Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
+      }
+
+      /*!sc*/
+      .hiHPcS:focus {
+        box-shadow: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
+      }
+
+      /*!sc*/
+      data-styled.g26[id="dyrhet-2"] {
+        content: "hiHPcS,"
+      }
+
+      /*!sc*/
+      .eqorQI {
+        min-width: 60px;
+        min-height: 32px;
+        max-height: 32px;
+        margin: 8px;
+        padding: 2px 15px;
+        background: none;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+        color: #7289da;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        -webkit-transition: 167ms;
+        transition: 167ms;
+        background: #7289da;
+        border-color: #7289da;
+        color: #fff;
+        margin: 8px 0 16px;
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+      }
+
+      /*!sc*/
+      .eqorQI:hover:not(:disabled),
+      .eqorQI:focus:not(:disabled) {
+        background: #667bc4;
+        border-color: #667bc4;
+      }
+
+      /*!sc*/
+      .eqorQI:active:not(:disabled) {
+        background: #5b6dae;
+        border-color: #5b6dae;
+      }
+
+      /*!sc*/
+      .eqorQI:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+
+      /*!sc*/
+      .rweje6-0 .eqorQI {
+        margin: 0 0 0 16px;
+      }
+
+      /*!sc*/
+      data-styled.g27[id="dyrhet-3"] {
+        content: "eqorQI,"
+      }
+
+      /*!sc*/
+      .evpIEG {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+
+      /*!sc*/
+      .evpIEG>*:not(button) {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+
+      /*!sc*/
+      .evpIEG>button {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+      }
+
+      /*!sc*/
+      .kJxOZP {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+      }
+
+      /*!sc*/
+      .kJxOZP>*:not(button) {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+
+      /*!sc*/
+      .kJxOZP>button {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+      }
+
+      /*!sc*/
+      data-styled.g32[id="sc-1yo7zhc-0"] {
+        content: "evpIEG,kJxOZP,"
+      }
+
+      /*!sc*/
+      .cvXfkk {
+        margin: 3px 1px 0 0.25em;
+        font-size: 13px;
+        font-weight: 500;
+        color: #dcddde;
+      }
+
+      /*!sc*/
+      .cvXfkk.cvXfkk {
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+      }
+
+      /*!sc*/
+      data-styled.g33[id="sc-1828ezo-0"] {
+        content: "cvXfkk,"
+      }
+
+      /*!sc*/
+      .kCNlrR {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 8px 8px 0;
+        position: relative;
+        margin-right: 0;
+      }
+
+      /*!sc*/
+      data-styled.g34[id="sc-1kuw07u-0"] {
+        content: "kCNlrR,"
+      }
+
+      /*!sc*/
+      .jZRSio {
+        position: relative;
+        margin: 0 8px 0 0;
+      }
+
+      /*!sc*/
+      data-styled.g35[id="sc-1kuw07u-1"] {
+        content: "jZRSio,"
+      }
+
+      /*!sc*/
+      .kIgBrR {
+        padding: 6px 8px;
+        margin: 8px 0;
+        background: #40444b;
+        border: none;
+        border-radius: 3px;
+        outline: none;
+        color: #dcddde;
+        font-size: 15px;
+        line-height: 20px;
+        position: absolute;
+        height: 32px;
+        width: 100%;
+      }
+
+      /*!sc*/
+      .kIgBrR:focus {
+        box-shadow: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
+      }
+
+      /*!sc*/
+      .sc-1kuw07u-1:focus-within>.kIgBrR {
+        box-shadow: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
+      }
+
+      /*!sc*/
+      data-styled.g37[id="sc-1kuw07u-2"] {
+        content: "kIgBrR,"
+      }
+
+      /*!sc*/
+      .ckTGse {
+        position: absolute;
+        top: 8px;
+        height: 32px;
+        width: 100%;
+        opacity: 0;
+      }
+
+      /*!sc*/
+      data-styled.g38[id="sc-1kuw07u-3"] {
+        content: "ckTGse,"
+      }
+
+      /*!sc*/
+      .gHgrU {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+
+      /*!sc*/
+      .gHgrU>* {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+
+      /*!sc*/
+      data-styled.g39[id="sc-1g41ufg-0"] {
+        content: "gHgrU,"
+      }
+
+      /*!sc*/
+      .iXnZtL {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 8px;
+        padding: 8px;
+        background: #2f3136;
+        border-radius: 4px;
+        box-shadow: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
+      }
+
+      /*!sc*/
+      .iXnZtL .sc-7gu1c0-0 {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      /*!sc*/
+      data-styled.g40[id="sc-7gu1c0-0"] {
+        content: "iXnZtL,"
+      }
+
+      /*!sc*/
+      .iDroGT {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        position: relative;
+        -webkit-flex-flow: row-reverse;
+        -ms-flex-flow: row-reverse;
+        flex-flow: row-reverse;
+      }
+
+      /*!sc*/
+      .iDroGT>*:not(button) {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+
+      /*!sc*/
+      .iDroGT>button {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+      }
+
+      /*!sc*/
+      data-styled.g46[id="sc-1yuket3-0"] {
+        content: "iDroGT,"
+      }
+
+      /*!sc*/
+      .iTRCwG {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+
+      /*!sc*/
+      .iTRCwG>*:not(button) {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+
+      /*!sc*/
+      .iTRCwG>button {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+      }
+
+      /*!sc*/
+      .iTRCwG>*:not(button) {
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+      }
+
+      /*!sc*/
+      data-styled.g48[id="ra7leq-0"] {
+        content: "iTRCwG,"
+      }
+
+      /*!sc*/
+      .hQtDAG {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 8px;
+        height: 32px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      /*!sc*/
+      data-styled.g49[id="tlqxhy-0"] {
+        content: "hQtDAG,"
+      }
+
+      /*!sc*/
+      .LZZQv {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        cursor: pointer;
+      }
+
+      /*!sc*/
+      .tlqxhy-0:focus-within>.LZZQv {
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+      }
+
+      /*!sc*/
+      data-styled.g50[id="tlqxhy-1"] {
+        content: "LZZQv,"
+      }
+
+      /*!sc*/
+      .bmbQjk {
+        position: relative;
+        width: 42px;
+        height: 24px;
+        border-radius: 14px;
+        background: #72767d;
+        -webkit-transition: 150ms ease-in-out;
+        transition: 150ms ease-in-out;
+        cursor: pointer;
+      }
+
+      /*!sc*/
+      .bmbQjk::after {
+        height: 18px;
+        width: 18px;
+        position: absolute;
+        content: "";
+        margin: 3px;
+        border-radius: 9px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        -webkit-transition: 150ms ease-in-out;
+        transition: 150ms ease-in-out;
+        pointer-events: none;
+      }
+
+      /*!sc*/
+      data-styled.g51[id="tlqxhy-2"] {
+        content: "bmbQjk,"
+      }
+
+      /*!sc*/
+      .cAnLIJ {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      /*!sc*/
+      data-styled.g52[id="tlqxhy-3"] {
+        content: "cAnLIJ,"
+      }
+
+      /*!sc*/
+      .hQfXex {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+
+      /*!sc*/
+      .hQfXex>*:not(button) {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+
+      /*!sc*/
+      .hQfXex>button {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+      }
+
+      /*!sc*/
+      .hQfXex>*:first-of-type {
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+        padding-right: 8px;
+      }
+
+      /*!sc*/
+      .hQfXex>*:last-of-type {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      /*!sc*/
+      data-styled.g53[id="sc-1my9wkn-0"] {
+        content: "hQfXex,"
+      }
+
+      /*!sc*/
+      .iVDLXM {
+        margin-top: 34px;
+        height: 32px;
+      }
+
+      /*!sc*/
+      .iVDLXM.iVDLXM>* {
+        padding-left: 0;
+      }
+
+      /*!sc*/
+      data-styled.g54[id="sc-1my9wkn-1"] {
+        content: "iVDLXM,"
+      }
+
+      /*!sc*/
+      .jHqbBK {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        position: relative;
+        -webkit-flex-flow: row-reverse;
+        -ms-flex-flow: row-reverse;
+        flex-flow: row-reverse;
+      }
+
+      /*!sc*/
+      .jHqbBK>*:not(button) {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+
+      /*!sc*/
+      .jHqbBK>button {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+      }
+
+      /*!sc*/
+      data-styled.g62[id="nh19xb-0"] {
+        content: "jHqbBK,"
+      }
+
+      /*!sc*/
+      .hfRrSO {
+        position: relative;
+      }
+
+      /*!sc*/
+      data-styled.g65[id="sc-1ghlv8q-0"] {
+        content: "hfRrSO,"
+      }
+
+      /*!sc*/
+      .hHRZUa {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        display: block;
+        height: 100%;
+        padding: 8px;
+      }
+
+      /*!sc*/
+      .hHRZUa>*:not(button) {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+
+      /*!sc*/
+      .hHRZUa>button {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+      }
+
+      /*!sc*/
+      .hHRZUa>*:not(button) {
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+      }
+
+      /*!sc*/
+      data-styled.g66[id="sc-1ghlv8q-1"] {
+        content: "hHRZUa,"
+      }
+
+      /*!sc*/
+      .gAtMNc {
+        display: block;
+        margin: -8px -8px 16px;
+        padding: 16px;
+        background: #f04747;
+        color: #fff;
+      }
+
+      /*!sc*/
+      data-styled.g67[id="sc-1ghlv8q-2"] {
+        content: "gAtMNc,"
+      }
+
+      /*!sc*/
+      .bulSPR {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+      }
+
+      /*!sc*/
+      data-styled.g68[id="sc-1lvlczd-0"] {
+        content: "bulSPR,"
+      }
+
+      /*!sc*/
+      .iUgZIr {
+        min-width: 4px;
+        max-width: 4px;
+        border-radius: 4px;
+        background: #4f545c;
+      }
+
+      /*!sc*/
+      data-styled.g69[id="sc-1lvlczd-1"] {
+        content: "iUgZIr,"
+      }
+
+      /*!sc*/
+      .vGxqn {
+        max-width: 90%;
+        padding: 0 8px 0 12px;
+        margin: 0;
+        text-indent: 0;
+      }
+
+      /*!sc*/
+      .sc-1yfe1q7-0 .vGxqn {
+        max-width: 100%;
+      }
+
+      /*!sc*/
+      data-styled.g70[id="sc-1lvlczd-2"] {
+        content: "vGxqn,"
+      }
+
+      /*!sc*/
+      .eyWGFO {
+        height: 1.375em;
+        width: 1.375em;
+        object-fit: contain;
+        vertical-align: bottom;
+      }
+
+      /*!sc*/
+      .sc-1yfe1q7-0 .eyWGFO {
+        height: 18px;
+        width: 18px;
+      }
+
+      /*!sc*/
+      data-styled.g71[id="sc-1kmkkdq-0"] {
+        content: "eyWGFO,"
+      }
+
+      /*!sc*/
+      .jJvfde {
+        padding: 0.2em;
+        margin: -0.2em 0;
+        border-radius: 3px;
+        background: #2f3136;
+        font-size: 0.85em;
+        line-height: 1.125rem;
+        white-space: pre-wrap;
+      }
+
+      /*!sc*/
+      .sc-1yfe1q7-0 .jJvfde {
+        background: #202225;
+      }
+
+      /*!sc*/
+      data-styled.g72[id="tvf2g8-0"] {
+        content: "jJvfde,"
+      }
+
+      /*!sc*/
+      .hMfGzZ {
+        border-radius: 3px;
+        padding: 0 2px;
+        cursor: pointer;
+        background: rgba(114, 137, 218, 0.1);
+        color: #7289da;
+        font-weight: 500;
+      }
+
+      /*!sc*/
+      .hMfGzZ:hover {
+        background: rgba(114, 137, 218, 0.7);
+        color: #fff;
+      }
+
+      /*!sc*/
+      data-styled.g73[id="sc-18ic1s0-0"] {
+        content: "hMfGzZ,"
+      }
+
+      /*!sc*/
+      .colQXk {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+      }
+
+      /*!sc*/
+      data-styled.g74[id="sc-11mh9aq-0"] {
+        content: "colQXk,"
+      }
+
+      /*!sc*/
+      .gRSkCW {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        line-height: 1.375;
+      }
+
+      /*!sc*/
+      data-styled.g75[id="sc-1d0s8bx-0"] {
+        content: "gRSkCW,"
+      }
+
+      /*!sc*/
+      .byPvgD {
+        position: relative;
+        margin-left: -4.5rem;
+        padding-left: 4.5rem;
+      }
+
+      /*!sc*/
+      data-styled.g76[id="sc-1nm54xg-0"] {
+        content: "byPvgD,"
+      }
+
+      /*!sc*/
+      .jYDgkC {
+        height: 2.5rem;
+        width: 2.5rem;
+        position: absolute;
+        left: 0;
+        top: 0.125rem;
+        margin: 0 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+
+      /*!sc*/
+      .jYDgkC:hover {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16);
+      }
+
+      /*!sc*/
+      .jYDgkC:active {
+        -webkit-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        transform: translateY(1px);
+      }
+
+      /*!sc*/
+      @media screen and (max-width:1024px) {
+        .jYDgkC {
+          display: none;
+        }
+      }
+
+      /*!sc*/
+      data-styled.g77[id="sc-1nm54xg-1"] {
+        content: "jYDgkC,"
+      }
+
+      /*!sc*/
+      .iFHxSe {
+        display: inline;
+        vertical-align: baseline;
+        margin: 0 0.25rem 0 0;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.375rem;
+        word-wrap: break-word;
+        cursor: pointer;
+      }
+
+      /*!sc*/
+      data-styled.g78[id="sc-1nm54xg-2"] {
+        content: "iFHxSe,"
+      }
+
+      /*!sc*/
+      .ldTfbi {
+        position: relative;
+        top: -0.1rem;
+        min-height: 1.275em;
+        max-height: 1.275em;
+        margin: 0.075em 0.25rem 0 0;
+        padding: 0.071875rem 0.275rem;
+        border-radius: 3px;
+        background: #7289da;
+        color: #fff;
+        font-size: 0.625em;
+        font-weight: 500;
+        line-height: 1.3;
+        vertical-align: baseline;
+      }
+
+      /*!sc*/
+      data-styled.g79[id="sc-1nm54xg-3"] {
+        content: "ldTfbi,"
+      }
+
+      /*!sc*/
+      .jCoYMR {
+        min-width: 0;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+      }
+
+      /*!sc*/
+      data-styled.g84[id="sc-15zbh4f-0"] {
+        content: "jCoYMR,"
+      }
+
+      /*!sc*/
+      .ktmsra {
+        min-width: 0;
+        margin: 0 0 1px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      /*!sc*/
+      data-styled.g85[id="sc-15zbh4f-1"] {
+        content: "ktmsra,"
+      }
+
+      /*!sc*/
+      .bIZrol {
+        min-width: 0;
+      }
+
+      /*!sc*/
+      .bIZrol>.sc-1d0s8bx-0 {
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        color: #dcddde;
+        white-space: pre-line;
+      }
+
+      /*!sc*/
+      data-styled.g86[id="sc-15zbh4f-2"] {
+        content: "bIZrol,"
+      }
+
+      /*!sc*/
+      .edBgWt {
+        padding: 0.5rem 1rem 1rem 0.75rem;
+        display: inline-grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+      }
+
+      /*!sc*/
+      data-styled.g94[id="sc-1n3purm-0"] {
+        content: "edBgWt,"
+      }
+
+      /*!sc*/
+      .etgCdg {
+        min-width: 0;
+        display: inline-block;
+        margin: 8px 0 0;
+        grid-column: 1 / 2;
+      }
+
+      /*!sc*/
+      .etgCdg>.sc-1d0s8bx-0 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      /*!sc*/
+      data-styled.g95[id="sc-1n3purm-1"] {
+        content: "etgCdg,"
+      }
+
+      /*!sc*/
+      .jrVfAi {
+        min-width: 0;
+        margin: 8px 0 0;
+        grid-column: 1 / 2;
+      }
+
+      /*!sc*/
+      .jrVfAi>.sc-1d0s8bx-0 {
+        font-size: 0.875rem;
+        color: #dcddde;
+        line-height: 1.125rem;
+        white-space: pre-line;
+      }
+
+      /*!sc*/
+      data-styled.g98[id="sc-1n3purm-3"] {
+        content: "jrVfAi,"
+      }
+
+      /*!sc*/
+      .kjIXJ {
+        min-width: 0;
+        margin: 8px 0 0;
+        display: grid;
+        grid-column: 1 / 2;
+        grid-gap: 8px;
+      }
+
+      /*!sc*/
+      data-styled.g99[id="sc-1n3purm-4"] {
+        content: "kjIXJ,"
+      }
+
+      /*!sc*/
+      .fsJyxV {
+        position: relative;
+        margin-top: 1rem;
+        padding: 0.125rem 16px 0.125rem 4.5rem;
+        min-height: 2.75rem;
+      }
+
+      /*!sc*/
+      @media screen and (max-width:1024px) {
+        .fsJyxV {
+          padding-left: 16px;
+        }
+      }
+
+      /*!sc*/
+      data-styled.g103[id="sc-15x4h4g-0"] {
+        content: "fsJyxV,"
+      }
+
+      /*!sc*/
+      .fSroCh {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 0.25rem;
+        padding: 0.125rem 0;
+        text-indent: 0;
+      }
+
+      /*!sc*/
+      .fSroCh>* {
+        justify-self: start;
+        -webkit-align-self: start;
+        -ms-flex-item-align: start;
+        align-self: start;
+      }
+
+      /*!sc*/
+      data-styled.g104[id="sc-15x4h4g-1"] {
+        content: "fSroCh,"
+      }
+
+      /*!sc*/
+      .iXQwgw {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      /*!sc*/
+      data-styled.g105[id="sc-91337t-0"] {
+        content: "iXQwgw,"
+      }
+
+      /*!sc*/
+      .hkphpa {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        -webkit-align-items: stretch;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        max-height: 100%;
+      }
+
+      /*!sc*/
+      .hkphpa>* {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      /*!sc*/
+      data-styled.g108[id="sc-91337t-3"] {
+        content: "hkphpa,"
+      }
+
+      /*!sc*/
+      .gBLPjg {
+        height: 100%;
+        overflow-y: scroll;
+      }
+
+      /*!sc*/
+      data-styled.g109[id="sc-91337t-4"] {
+        content: "gBLPjg,"
+      }
+
+      /*!sc*/
+      .SCzAt {
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+      }
+
+      /*!sc*/
+      data-styled.g110[id="sc-91337t-5"] {
+        content: "SCzAt,"
+      }
+
+      /*!sc*/
+      @font-face {
+        font-family: Whitney;
+        src: url("static/whitney-300.woff2"), url("static/whitney-300.woff");
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+      }
+
+      /*!sc*/
+      @font-face {
+        font-family: Whitney;
+        src: url("static/whitney-400.woff2"), url("static/whitney-400.woff");
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      /*!sc*/
+      @font-face {
+        font-family: Whitney;
+        src: url("static/whitney-500.woff2"), url("static/whitney-500.woff");
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      /*!sc*/
+      @font-face {
+        font-family: Whitney;
+        src: url("static/whitney-600.woff2"), url("static/whitney-600.woff");
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+      }
+
+      /*!sc*/
+      @font-face {
+        font-family: Whitney;
+        src: url("static/whitney-700.woff2"), url("static/whitney-700.woff");
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      /*!sc*/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        background: #36393f;
+        line-height: 1;
+        color: #dcddde;
+        font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        text-rendering: optimizeLegibility;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      /*!sc*/
+      button,
+      input,
+      textarea {
+        font-family: inherit;
+      }
+
+      /*!sc*/
+      #app,
+      #__next {
+        height: 100%;
+      }
+
+      /*!sc*/
+      pre,
+      code {
+        font-family: Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
+      }
+
+      /*!sc*/
+      a {
+        color: #00b0f4;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+      }
+
+      /*!sc*/
+      a:hover {
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+      }
+
+      /*!sc*/
+      img {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      /*!sc*/
+      * {
+        box-sizing: border-box;
+        -webkit-scrollbar-color: #202225 #2f3136;
+        -moz-scrollbar-color: #202225 #2f3136;
+        -ms-scrollbar-color: #202225 #2f3136;
+        scrollbar-color: #202225 #2f3136;
+        -webkit-scrollbar-width: thin;
+        -moz-scrollbar-width: thin;
+        -ms-scrollbar-width: thin;
+        scrollbar-width: thin;
+      }
+
+      /*!sc*/
+      *::-webkit-scrollbar {
+        height: 14px;
+        width: 14px;
+        background-color: #36393f;
+      }
+
+      /*!sc*/
+      *::-webkit-scroll-corner {
+        background-color: transparent;
+      }
+
+      /*!sc*/
+      *::-webkit-scrollbar-thumb {
+        background-color: #202225;
+        border: 3px solid #36393f;
+        border-radius: 7px;
+        background-clip: padding-box;
+      }
+
+      /*!sc*/
+      *::-webkit-scrollbar-track-piece {
+        background-color: #2f3136;
+        border: 3px solid #36393f;
+        border-radius: 7px;
+      }
+
+      /*!sc*/
+      *::-webkit-resizer {
+        background-color: #36393f;
+        background-image: url("static/resizer-dark.svg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+      }
+
+      /*!sc*/
+      data-styled.g144[id="sc-global-ccBQui1"] {
+        content: "sc-global-ccBQui1,"
+      }
+
+      /*!sc*/
+    </style>
+  </head>
+  <body>
+    <div id="__next">
+      <div class="sc-91337t-0 iXQwgw">
+        <main class="sc-91337t-3 hkphpa">
+          <div class="sc-91337t-4 gBLPjg">
+            <div class="sc-15x4h4g-0 fsJyxV sc-91337t-5 SCzAt">
+              <div class="sc-1nm54xg-0 byPvgD">
+                <img src="static/discord-avatar.png" alt="User avatar" class="sc-1nm54xg-1 jYDgkC">
+                <h1 class="sc-1nm54xg-2 iFHxSe">Webhook Manager</h1>
+                <span class="sc-1nm54xg-3 ldTfbi">BOT</span>
+              </div>
+              <div class="sc-1d0s8bx-0 gRSkCW">Добро пожаловать в <img src="static/discohook-emoji.png" alt="Webhook Manager" title="Webhook Manager" draggable="false" class="sc-1kmkkdq-0 eyWGFO">Webhook Manager - лучший менеджер вебхуков дискорда для вашего пк!. </div>
+              <div class="sc-15x4h4g-1 fSroCh">
+                <div style="border-color:#7289da" class="sc-1yfe1q7-0 ftXluy">
+                  <div class="sc-1n3purm-0 edBgWt">
+                    <span class="sc-1n3purm-1 etgCdg">
+                      <div class="sc-1d0s8bx-0 gRSkCW">What&#x27;s all this?</div>
+                    </span>
+                    <div class="sc-1n3purm-3 jrVfAi">
+                      <div class="sc-1d0s8bx-0 gRSkCW">Webhook Manager is a free tool that allows you to build Discord messages and embeds for use in your server. Webhook Manager sends messages using <em>webhooks</em>, an API feature that allows third-party services to <em>blindly</em> send messages into text channels. While webhooks can send messages, they cannot respond to user interactions such as messages. </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="border-color:#43b581" class="sc-1yfe1q7-0 ftXluy">
+                  <div class="sc-1n3purm-0 edBgWt">
+                    <span class="sc-1n3purm-1 etgCdg">
+                      <div class="sc-1d0s8bx-0 gRSkCW">Text formatting how-tos</div>
+                    </span>
+                    <div class="sc-1n3purm-3 jrVfAi">
+                      <div class="sc-1d0s8bx-0 gRSkCW">There are a few basic styles you can take advantage of: <em>Italics</em>, by surrounding text in asterisks (*); <strong>Bold</strong>, by surrounding text in double asterisks (**); <u>Underline</u>, by using double underscores (__); <del>Strikethrough</del>, by using double tildes (~~); <code class="tvf2g8-0 jJvfde">Code</code>, by using backticks (`). </div>
+                    </div>
+                    <div class="sc-1n3purm-4 kjIXJ">
+                      <div style="grid-column:1 / 13" class="sc-15zbh4f-0 jCoYMR">
+                        <div class="sc-15zbh4f-1 ktmsra">
+                          <div class="sc-1d0s8bx-0 gRSkCW">Advanced formatting</div>
+                        </div>
+                        <div class="sc-15zbh4f-2 bIZrol">
+                          <div class="sc-1d0s8bx-0 gRSkCW">Beyond these basic styles, you can also start a blockquote with a right-pointing angle bracket (&gt;): <div class="sc-1lvlczd-0 bulSPR">
+                              <div class="sc-1lvlczd-1 iUgZIr"></div>
+                              <blockquote class="sc-1lvlczd-2 vGxqn">Hello. </blockquote>
+                            </div>Or mark sensitive content behind a spoiler using two vertical bars (||): <span class="sc-11mh9aq-0 colQXk">This is hidden until clicked</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="grid-column:1 / 13" class="sc-15zbh4f-0 jCoYMR">
+                        <div class="sc-15zbh4f-1 ktmsra">
+                          <div class="sc-1d0s8bx-0 gRSkCW">Using server emoji</div>
+                        </div>
+                        <div class="sc-15zbh4f-2 bIZrol">
+                          <div class="sc-1d0s8bx-0 gRSkCW">While default emoji work like you would expect them to, server emotes are a bit more complicated. To send a server emoji with a webhook, you must use a specific formatting code to do so. To find it, send that emoji in your server, but put a backslash (\) in front of it. For example: sending <code class="tvf2g8-0 jJvfde">\:my_emoji:</code> would send <code class="tvf2g8-0 jJvfde">&lt;:my_emoji:12345&gt;</code> into chat. If you copy the output into Webhook Manager, the emoji will show up properly. </div>
+                        </div>
+                      </div>
+                      <div style="grid-column:1 / 13" class="sc-15zbh4f-0 jCoYMR">
+                        <div class="sc-15zbh4f-1 ktmsra">
+                          <div class="sc-1d0s8bx-0 gRSkCW">Pinging users and roles, linking to channels</div>
+                        </div>
+                        <div class="sc-15zbh4f-2 bIZrol">
+                          <div class="sc-1d0s8bx-0 gRSkCW">First of all, you must have enabled developer mode in Discord&#x27;s settings. To do so, open Discord settings and navigate to Appearance. There will be a Developer Mode toggle under the Advanced section, which you must enable. Having developer mode enabled, you can now right-click your target to copy their ID. Keep in mind that for users, you must right click their <em>avatar</em>, not the message. To mention them, you have to use Discord&#x27;s mention syntax: <code class="tvf2g8-0 jJvfde">&lt;@!user_id&gt;</code>, <code class="tvf2g8-0 jJvfde">&lt;@&amp;role_id&gt;</code>, or <code class="tvf2g8-0 jJvfde">&lt;#channel_id&gt;</code>. If done correctly, they will appear as <span class="sc-18ic1s0-0 hMfGzZ">@user</span> in the preview. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="border-color:#faa61a" class="sc-1yfe1q7-0 ftXluy">
+                  <div class="sc-1n3purm-0 edBgWt">
+                    <span class="sc-1n3purm-1 etgCdg">
+                      <div class="sc-1d0s8bx-0 gRSkCW">Additional magic</div>
+                    </span>
+                    <div class="sc-1n3purm-4 kjIXJ">
+                      <div style="grid-column:1 / 13" class="sc-15zbh4f-0 jCoYMR">
+                        <div class="sc-15zbh4f-1 ktmsra">
+                          <div class="sc-1d0s8bx-0 gRSkCW">Image galleries</div>
+                        </div>
+                        <div class="sc-15zbh4f-2 bIZrol">
+                          <div class="sc-1d0s8bx-0 gRSkCW">With some special magic, you can have up to 4 images in a single embed. This feature is exclusive to webhooks, so don&#x27;t expect to make it work on a traditional bot. All you need is to give your embed a URL and click on the &quot;Edit images&quot; button inside any embed to get started.</div>
+                        </div>
+                      </div>
+                      <div style="grid-column:1 / 13" class="sc-15zbh4f-0 jCoYMR">
+                        <div class="sc-15zbh4f-1 ktmsra">
+                          <div class="sc-1d0s8bx-0 gRSkCW">Backups</div>
+                        </div>
+                        <div class="sc-15zbh4f-2 bIZrol">
+                          <div class="sc-1d0s8bx-0 gRSkCW">Not only can Webhook Manager send messages, but Webhook Manager can also save them for later use. For when your message wasn&#x27;t quite right. For convenience, backups also contain the webhook URL. Backups will not be sent to the Webhook Manager, and will always be stored offline. If you clear your browsing data, your backups will be lost <em>forever</em>! If you want to keep your backups somewhere else, you can export backups to get a saved copy. Do keep in mind that they also include the stored webhook URL, so don&#x27;t share it with anyone you don&#x27;t trust. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="border-color:#f04747" class="sc-1yfe1q7-0 ftXluy">
+                  <div class="sc-1n3purm-0 edBgWt">
+                    <span class="sc-1n3purm-1 etgCdg">
+                      <div class="sc-1d0s8bx-0 gRSkCW">Legal things</div>
+                    </span>
+                    <div class="sc-1n3purm-3 jrVfAi">
+                      <div class="sc-1d0s8bx-0 gRSkCW">To make Webhook Manager as helpful as it can be, we use some assets derived from Discord&#x27;s application. Webhook Manager has no affiliation with Discord in any way, shape, or form. The source code to this app is <a href="https://github.com/Webhook Manager/Webhook Manager" rel="noopener noreferrer nofollow ugc" target="_blank">available on GitHub</a> licensed under the GNU Affero General Public License v3.0. If you need to contact me, you can join the <a href="https://Webhook Manager.org/discord" rel="noopener noreferrer nofollow ugc" target="_blank">support server</a>, or send an email to &quot;hello&quot; at Webhook Manager.org. </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sc-91337t-4 gBLPjg">
+            <div class="sc-1ghlv8q-0 hfRrSO">
+              <div class="sc-1yo7zhc-0 sc-1ghlv8q-1 hHRZUa">
+                <noscript class="sc-1ghlv8q-2 gAtMNc">Webhook Manager requires JavaScript to be enabled, please turn it on in your browser settings to use this app.</noscript>
+                <div class="sc-1h2kmjy-0 fHrToZ">
+                  <span class="sc-1h2kmjy-1 eiGELQ">Message editor</span>
+                  <div class="sc-1h2kmjy-2 fNcbAb">
+                    <button type="button" class="sc-1h2kmjy-3 fsgmdW">Support server</button>
+                    <button type="button" class="sc-1h2kmjy-3 fsgmdW">Backups</button>
+                    <button type="button" class="sc-1h2kmjy-3 fsgmdW">Appearance</button>
+                    <button type="button" class="sc-1h2kmjy-3 fsgmdW">Clear all</button>
+                  </div>
+                </div>
+                <div class="sc-1yo7zhc-0 evpIEG">
+                  <div class="gssc5a-0 kaKJzK">
+                    <div class="sc-1yo7zhc-0 evpIEG">
+                      <label for="webhook-url" class="sc-1l3alj9-0 bnXoKL">Webhook URL</label>
+                    </div>
+                    <input type="text" id="webhook-url" value="" placeholder="https://discord.com/api/webhooks/..." class="rvocnm-0 eOsxHn">
+                  </div>
+                  <button disabled="" type="button" class="d6epy7-0 cAQIzs">Send</button>
+                </div>
+                <div class="gssc5a-0 kaKJzK">
+                  <div class="sc-1yo7zhc-0 evpIEG">
+                    <label for="message--1-content" class="sc-1l3alj9-0 bnXoKL">Message content</label>
+                    <div class="sc-1828ezo-0 cvXfkk">302 / 2000</div>
+                  </div>
+                  <textarea id="message--1-content" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 fjSbfQ">Welcome to &lt;:Webhook Manager:735474274458140705&gt;Webhook Manager, a free message and embed builder for Discord!
+There&#x27;s additional info in the embeds below, or you can use the *Clear all* button in the editor to start making embeds.
+Have questions? Webhook Manager has a support server at &lt;https://Webhook Manager.org/discord&gt;.</textarea>
+                </div>
+                <div class="sc-1yo7zhc-0 kJxOZP">
+                  <div class="sc-7gu1c0-0 iXnZtL">
+                    <div class="sc-1h2kmjy-0 fHrToZ">
+                      <span class="sc-1h2kmjy-1 eiGELQ">Embed 1</span>
+                      <div class="sc-1h2kmjy-2 fNcbAb">
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Duplicate</button>
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Delete</button>
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Down</button>
+                      </div>
+                    </div>
+                    <div class="sc-1yo7zhc-0 kJxOZP">
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--2-title" class="sc-1l3alj9-0 bnXoKL">Title</label>
+                            <div class="sc-1828ezo-0 cvXfkk">16 / 256</div>
+                          </div>
+                          <input type="text" id="embed--2-title" value="What&#x27;s all this?" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--2-url" class="sc-1l3alj9-0 bnXoKL">Title URL</label>
+                          </div>
+                          <input type="text" id="embed--2-url" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                      </div>
+                      <div class="gssc5a-0 kaKJzK">
+                        <div class="sc-1yo7zhc-0 evpIEG">
+                          <label for="embed--2-description" class="sc-1l3alj9-0 bnXoKL">Description</label>
+                          <div class="sc-1828ezo-0 cvXfkk">333 / 2048</div>
+                        </div>
+                        <textarea id="embed--2-description" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 fjSbfQ">Webhook Manager is a free tool that allows you to build Discord messages and embeds for use in your server.
+
+Webhook Manager sends messages using *webhooks*, an API feature that allows third-party services to *blindly* send messages into text channels. While webhooks can send messages, they cannot respond to user interactions such as messages.</textarea>
+                      </div>
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--2-author" class="sc-1l3alj9-0 bnXoKL">Author Name</label>
+                            <div class="sc-1828ezo-0 cvXfkk">0 / 256</div>
+                          </div>
+                          <input type="text" id="embed--2-author" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--2-authorurl" class="sc-1l3alj9-0 bnXoKL">Author URL</label>
+                          </div>
+                          <input type="text" id="embed--2-authorurl" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--2-authoricon" class="sc-1l3alj9-0 bnXoKL">Author Icon</label>
+                          </div>
+                          <input type="text" id="embed--2-authoricon" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                      </div>
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--2-footer" class="sc-1l3alj9-0 bnXoKL">Footer Text</label>
+                            <div class="sc-1828ezo-0 cvXfkk">0 / 2048</div>
+                          </div>
+                          <input type="text" id="embed--2-footer" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--2-footericon" class="sc-1l3alj9-0 bnXoKL">Footer Icon</label>
+                          </div>
+                          <input type="text" id="embed--2-footericon" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="sc-1yo7zhc-0 nh19xb-0 jHqbBK">
+                          <div class="gssc5a-0 kaKJzK">
+                            <div class="sc-1yo7zhc-0 evpIEG">
+                              <label for="embed--2-timestamp" class="sc-1l3alj9-0 bnXoKL">Timestamp</label>
+                            </div>
+                            <input type="text" id="embed--2-timestamp" value="" placeholder="YYYY-MM-DD hh:mm" class="rvocnm-0 eOsxHn">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sc-1yo7zhc-0 ra7leq-0 iTRCwG">
+                        <div class="sc-1yo7zhc-0 sc-1yuket3-0 iDroGT">
+                          <div class="gssc5a-0 kaKJzK">
+                            <div class="sc-1yo7zhc-0 evpIEG">
+                              <label for="embed--2-color" class="sc-1l3alj9-0 bnXoKL">Color</label>
+                            </div>
+                            <input type="text" id="embed--2-color" value="#7289da" placeholder="#rrggbb" class="rvocnm-0 eOsxHn">
+                          </div>
+                        </div>
+                        <button type="button" class="d6epy7-0 cAQIzs">Edit images</button>
+                      </div>
+                      <div class="sc-1yo7zhc-0 kJxOZP">
+                        <button type="button" class="d6epy7-0 cAQIzs">Add
+                          <!-- -->Field
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sc-7gu1c0-0 iXnZtL">
+                    <div class="sc-1h2kmjy-0 fHrToZ">
+                      <span class="sc-1h2kmjy-1 eiGELQ">Embed 2</span>
+                      <div class="sc-1h2kmjy-2 fNcbAb">
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Duplicate</button>
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Delete</button>
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Up</button>
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Down</button>
+                      </div>
+                    </div>
+                    <div class="sc-1yo7zhc-0 kJxOZP">
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--3-title" class="sc-1l3alj9-0 bnXoKL">Title</label>
+                            <div class="sc-1828ezo-0 cvXfkk">23 / 256</div>
+                          </div>
+                          <input type="text" id="embed--3-title" value="Text formatting how-tos" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--3-url" class="sc-1l3alj9-0 bnXoKL">Title URL</label>
+                          </div>
+                          <input type="text" id="embed--3-url" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                      </div>
+                      <div class="gssc5a-0 kaKJzK">
+                        <div class="sc-1yo7zhc-0 evpIEG">
+                          <label for="embed--3-description" class="sc-1l3alj9-0 bnXoKL">Description</label>
+                          <div class="sc-1828ezo-0 cvXfkk">297 / 2048</div>
+                        </div>
+                        <textarea id="embed--3-description" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 fjSbfQ">There are a few basic styles you can take advantage of:
+*Italics*, by surrounding text in asterisks (\*);
+**Bold**, by surrounding text in double asterisks (\*\*);
+__Underline__, by using double underscores (\_\_);
+~~Strikethrough~~, by using double tildes (\~\~);
+`Code`, by using backticks (\`).</textarea>
+                      </div>
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--3-author" class="sc-1l3alj9-0 bnXoKL">Author Name</label>
+                            <div class="sc-1828ezo-0 cvXfkk">0 / 256</div>
+                          </div>
+                          <input type="text" id="embed--3-author" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--3-authorurl" class="sc-1l3alj9-0 bnXoKL">Author URL</label>
+                          </div>
+                          <input type="text" id="embed--3-authorurl" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--3-authoricon" class="sc-1l3alj9-0 bnXoKL">Author Icon</label>
+                          </div>
+                          <input type="text" id="embed--3-authoricon" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                      </div>
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--3-footer" class="sc-1l3alj9-0 bnXoKL">Footer Text</label>
+                            <div class="sc-1828ezo-0 cvXfkk">0 / 2048</div>
+                          </div>
+                          <input type="text" id="embed--3-footer" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--3-footericon" class="sc-1l3alj9-0 bnXoKL">Footer Icon</label>
+                          </div>
+                          <input type="text" id="embed--3-footericon" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="sc-1yo7zhc-0 nh19xb-0 jHqbBK">
+                          <div class="gssc5a-0 kaKJzK">
+                            <div class="sc-1yo7zhc-0 evpIEG">
+                              <label for="embed--3-timestamp" class="sc-1l3alj9-0 bnXoKL">Timestamp</label>
+                            </div>
+                            <input type="text" id="embed--3-timestamp" value="" placeholder="YYYY-MM-DD hh:mm" class="rvocnm-0 eOsxHn">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sc-1yo7zhc-0 ra7leq-0 iTRCwG">
+                        <div class="sc-1yo7zhc-0 sc-1yuket3-0 iDroGT">
+                          <div class="gssc5a-0 kaKJzK">
+                            <div class="sc-1yo7zhc-0 evpIEG">
+                              <label for="embed--3-color" class="sc-1l3alj9-0 bnXoKL">Color</label>
+                            </div>
+                            <input type="text" id="embed--3-color" value="#43b581" placeholder="#rrggbb" class="rvocnm-0 eOsxHn">
+                          </div>
+                        </div>
+                        <button type="button" class="d6epy7-0 cAQIzs">Edit images</button>
+                      </div>
+                      <div class="sc-1yo7zhc-0 kJxOZP">
+                        <div class="sc-7gu1c0-0 iXnZtL">
+                          <div class="sc-1h2kmjy-0 fHrToZ">
+                            <span class="sc-1h2kmjy-1 eiGELQ">Field 1</span>
+                            <div class="sc-1h2kmjy-2 fNcbAb">
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Delete</button>
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Down</button>
+                            </div>
+                          </div>
+                          <div class="sc-1yo7zhc-0 kJxOZP">
+                            <div class="sc-1yo7zhc-0 sc-1my9wkn-0 hQfXex">
+                              <div class="gssc5a-0 kaKJzK">
+                                <div class="sc-1yo7zhc-0 evpIEG">
+                                  <label for="field--4-name" class="sc-1l3alj9-0 bnXoKL">Field Name</label>
+                                  <div class="sc-1828ezo-0 cvXfkk">19 / 256
+                                    <!-- -->,
+                                  </div>
+                                  <div class="sc-1828ezo-0 cvXfkk">Required</div>
+                                </div>
+                                <input type="text" id="field--4-name" value="Advanced formatting" class="rvocnm-0 eOsxHn">
+                              </div>
+                              <div class="sc-1my9wkn-1 iVDLXM">
+                                <div class="tlqxhy-0 hQtDAG">
+                                  <label for="field--4-inline" class="tlqxhy-1 LZZQv">Inline</label>
+                                  <div class="tlqxhy-2 bmbQjk">
+                                    <input type="checkbox" id="field--4-inline" class="tlqxhy-3 cAnLIJ">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gssc5a-0 kaKJzK">
+                              <div class="sc-1yo7zhc-0 evpIEG">
+                                <label for="field--4-value" class="sc-1l3alj9-0 bnXoKL">Field Value</label>
+                                <div class="sc-1828ezo-0 cvXfkk">215 / 1024
+                                  <!-- -->,
+                                </div>
+                                <div class="sc-1828ezo-0 cvXfkk">Required</div>
+                              </div>
+                              <textarea id="field--4-value" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 fjSbfQ">Beyond these basic styles, you can also start a blockquote with a right-pointing angle bracket (&gt;):
+&gt; Hello.
+Or mark sensitive content behind a spoiler using two vertical bars (\||):
+||This is hidden until clicked||</textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sc-7gu1c0-0 iXnZtL">
+                          <div class="sc-1h2kmjy-0 fHrToZ">
+                            <span class="sc-1h2kmjy-1 eiGELQ">Field 2</span>
+                            <div class="sc-1h2kmjy-2 fNcbAb">
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Delete</button>
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Up</button>
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Down</button>
+                            </div>
+                          </div>
+                          <div class="sc-1yo7zhc-0 kJxOZP">
+                            <div class="sc-1yo7zhc-0 sc-1my9wkn-0 hQfXex">
+                              <div class="gssc5a-0 kaKJzK">
+                                <div class="sc-1yo7zhc-0 evpIEG">
+                                  <label for="field--5-name" class="sc-1l3alj9-0 bnXoKL">Field Name</label>
+                                  <div class="sc-1828ezo-0 cvXfkk">18 / 256
+                                    <!-- -->,
+                                  </div>
+                                  <div class="sc-1828ezo-0 cvXfkk">Required</div>
+                                </div>
+                                <input type="text" id="field--5-name" value="Using server emoji" class="rvocnm-0 eOsxHn">
+                              </div>
+                              <div class="sc-1my9wkn-1 iVDLXM">
+                                <div class="tlqxhy-0 hQtDAG">
+                                  <label for="field--5-inline" class="tlqxhy-1 LZZQv">Inline</label>
+                                  <div class="tlqxhy-2 bmbQjk">
+                                    <input type="checkbox" id="field--5-inline" class="tlqxhy-3 cAnLIJ">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gssc5a-0 kaKJzK">
+                              <div class="sc-1yo7zhc-0 evpIEG">
+                                <label for="field--5-value" class="sc-1l3alj9-0 bnXoKL">Field Value</label>
+                                <div class="sc-1828ezo-0 cvXfkk">422 / 1024
+                                  <!-- -->,
+                                </div>
+                                <div class="sc-1828ezo-0 cvXfkk">Required</div>
+                              </div>
+                              <textarea id="field--5-value" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 fjSbfQ">While default emoji work like you would expect them to, server emotes are a bit more complicated.
+
+To send a server emoji with a webhook, you must use a specific formatting code to do so. To find it, send that emoji in your server, but put a backslash (\\) in front of it.
+
+For example: sending `\:my_emoji:` would send `&lt;:my_emoji:12345&gt;` into chat. If you copy the output into Webhook Manager, the emoji will show up properly.</textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sc-7gu1c0-0 iXnZtL">
+                          <div class="sc-1h2kmjy-0 fHrToZ">
+                            <span class="sc-1h2kmjy-1 eiGELQ">Field 3</span>
+                            <div class="sc-1h2kmjy-2 fNcbAb">
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Delete</button>
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Up</button>
+                            </div>
+                          </div>
+                          <div class="sc-1yo7zhc-0 kJxOZP">
+                            <div class="sc-1yo7zhc-0 sc-1my9wkn-0 hQfXex">
+                              <div class="gssc5a-0 kaKJzK">
+                                <div class="sc-1yo7zhc-0 evpIEG">
+                                  <label for="field--6-name" class="sc-1l3alj9-0 bnXoKL">Field Name</label>
+                                  <div class="sc-1828ezo-0 cvXfkk">44 / 256
+                                    <!-- -->,
+                                  </div>
+                                  <div class="sc-1828ezo-0 cvXfkk">Required</div>
+                                </div>
+                                <input type="text" id="field--6-name" value="Pinging users and roles, linking to channels" class="rvocnm-0 eOsxHn">
+                              </div>
+                              <div class="sc-1my9wkn-1 iVDLXM">
+                                <div class="tlqxhy-0 hQtDAG">
+                                  <label for="field--6-inline" class="tlqxhy-1 LZZQv">Inline</label>
+                                  <div class="tlqxhy-2 bmbQjk">
+                                    <input type="checkbox" id="field--6-inline" class="tlqxhy-3 cAnLIJ">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gssc5a-0 kaKJzK">
+                              <div class="sc-1yo7zhc-0 evpIEG">
+                                <label for="field--6-value" class="sc-1l3alj9-0 bnXoKL">Field Value</label>
+                                <div class="sc-1828ezo-0 cvXfkk">579 / 1024
+                                  <!-- -->,
+                                </div>
+                                <div class="sc-1828ezo-0 cvXfkk">Required</div>
+                              </div>
+                              <textarea id="field--6-value" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 fjSbfQ">First of all, you must have enabled developer mode in Discord&#x27;s settings. To do so, open Discord settings and navigate to Appearance. There will be a Developer Mode toggle under the Advanced section, which you must enable.
+
+Having developer mode enabled, you can now right-click your target to copy their ID. Keep in mind that for users, you must right click their *avatar*, not the message.
+
+To mention them, you have to use Discord&#x27;s mention syntax:
+`&lt;@!user_id&gt;`, `&lt;@&amp;role_id&gt;`, or `&lt;#channel_id&gt;`. If done correctly, they will appear as &lt;@!143419667677970434&gt; in the preview.</textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="button" class="d6epy7-0 cAQIzs">Add
+                          <!-- -->Field
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sc-7gu1c0-0 iXnZtL">
+                    <div class="sc-1h2kmjy-0 fHrToZ">
+                      <span class="sc-1h2kmjy-1 eiGELQ">Embed 3</span>
+                      <div class="sc-1h2kmjy-2 fNcbAb">
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Duplicate</button>
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Delete</button>
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Up</button>
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Down</button>
+                      </div>
+                    </div>
+                    <div class="sc-1yo7zhc-0 kJxOZP">
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--7-title" class="sc-1l3alj9-0 bnXoKL">Title</label>
+                            <div class="sc-1828ezo-0 cvXfkk">16 / 256</div>
+                          </div>
+                          <input type="text" id="embed--7-title" value="Additional magic" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--7-url" class="sc-1l3alj9-0 bnXoKL">Title URL</label>
+                          </div>
+                          <input type="text" id="embed--7-url" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                      </div>
+                      <div class="gssc5a-0 kaKJzK">
+                        <div class="sc-1yo7zhc-0 evpIEG">
+                          <label for="embed--7-description" class="sc-1l3alj9-0 bnXoKL">Description</label>
+                          <div class="sc-1828ezo-0 cvXfkk">0 / 2048</div>
+                        </div>
+                        <textarea id="embed--7-description" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 fjSbfQ"></textarea>
+                      </div>
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--7-author" class="sc-1l3alj9-0 bnXoKL">Author Name</label>
+                            <div class="sc-1828ezo-0 cvXfkk">0 / 256</div>
+                          </div>
+                          <input type="text" id="embed--7-author" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--7-authorurl" class="sc-1l3alj9-0 bnXoKL">Author URL</label>
+                          </div>
+                          <input type="text" id="embed--7-authorurl" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--7-authoricon" class="sc-1l3alj9-0 bnXoKL">Author Icon</label>
+                          </div>
+                          <input type="text" id="embed--7-authoricon" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                      </div>
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--7-footer" class="sc-1l3alj9-0 bnXoKL">Footer Text</label>
+                            <div class="sc-1828ezo-0 cvXfkk">0 / 2048</div>
+                          </div>
+                          <input type="text" id="embed--7-footer" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--7-footericon" class="sc-1l3alj9-0 bnXoKL">Footer Icon</label>
+                          </div>
+                          <input type="text" id="embed--7-footericon" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="sc-1yo7zhc-0 nh19xb-0 jHqbBK">
+                          <div class="gssc5a-0 kaKJzK">
+                            <div class="sc-1yo7zhc-0 evpIEG">
+                              <label for="embed--7-timestamp" class="sc-1l3alj9-0 bnXoKL">Timestamp</label>
+                            </div>
+                            <input type="text" id="embed--7-timestamp" value="" placeholder="YYYY-MM-DD hh:mm" class="rvocnm-0 eOsxHn">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sc-1yo7zhc-0 ra7leq-0 iTRCwG">
+                        <div class="sc-1yo7zhc-0 sc-1yuket3-0 iDroGT">
+                          <div class="gssc5a-0 kaKJzK">
+                            <div class="sc-1yo7zhc-0 evpIEG">
+                              <label for="embed--7-color" class="sc-1l3alj9-0 bnXoKL">Color</label>
+                            </div>
+                            <input type="text" id="embed--7-color" value="#faa61a" placeholder="#rrggbb" class="rvocnm-0 eOsxHn">
+                          </div>
+                        </div>
+                        <button type="button" class="d6epy7-0 cAQIzs">Edit images</button>
+                      </div>
+                      <div class="sc-1yo7zhc-0 kJxOZP">
+                        <div class="sc-7gu1c0-0 iXnZtL">
+                          <div class="sc-1h2kmjy-0 fHrToZ">
+                            <span class="sc-1h2kmjy-1 eiGELQ">Field 1</span>
+                            <div class="sc-1h2kmjy-2 fNcbAb">
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Delete</button>
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Down</button>
+                            </div>
+                          </div>
+                          <div class="sc-1yo7zhc-0 kJxOZP">
+                            <div class="sc-1yo7zhc-0 sc-1my9wkn-0 hQfXex">
+                              <div class="gssc5a-0 kaKJzK">
+                                <div class="sc-1yo7zhc-0 evpIEG">
+                                  <label for="field--8-name" class="sc-1l3alj9-0 bnXoKL">Field Name</label>
+                                  <div class="sc-1828ezo-0 cvXfkk">15 / 256
+                                    <!-- -->,
+                                  </div>
+                                  <div class="sc-1828ezo-0 cvXfkk">Required</div>
+                                </div>
+                                <input type="text" id="field--8-name" value="Image galleries" class="rvocnm-0 eOsxHn">
+                              </div>
+                              <div class="sc-1my9wkn-1 iVDLXM">
+                                <div class="tlqxhy-0 hQtDAG">
+                                  <label for="field--8-inline" class="tlqxhy-1 LZZQv">Inline</label>
+                                  <div class="tlqxhy-2 bmbQjk">
+                                    <input type="checkbox" id="field--8-inline" class="tlqxhy-3 cAnLIJ">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gssc5a-0 kaKJzK">
+                              <div class="sc-1yo7zhc-0 evpIEG">
+                                <label for="field--8-value" class="sc-1l3alj9-0 bnXoKL">Field Value</label>
+                                <div class="sc-1828ezo-0 cvXfkk">277 / 1024
+                                  <!-- -->,
+                                </div>
+                                <div class="sc-1828ezo-0 cvXfkk">Required</div>
+                              </div>
+                              <textarea id="field--8-value" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 fjSbfQ">With some special magic, you can have up to 4 images in a single embed. This feature is exclusive to webhooks, so don&#x27;t expect to make it work on a traditional bot.
+
+All you need is to give your embed a URL and click on the &quot;Edit images&quot; button inside any embed to get started.</textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sc-7gu1c0-0 iXnZtL">
+                          <div class="sc-1h2kmjy-0 fHrToZ">
+                            <span class="sc-1h2kmjy-1 eiGELQ">Field 2</span>
+                            <div class="sc-1h2kmjy-2 fNcbAb">
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Delete</button>
+                              <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Up</button>
+                            </div>
+                          </div>
+                          <div class="sc-1yo7zhc-0 kJxOZP">
+                            <div class="sc-1yo7zhc-0 sc-1my9wkn-0 hQfXex">
+                              <div class="gssc5a-0 kaKJzK">
+                                <div class="sc-1yo7zhc-0 evpIEG">
+                                  <label for="field--9-name" class="sc-1l3alj9-0 bnXoKL">Field Name</label>
+                                  <div class="sc-1828ezo-0 cvXfkk">7 / 256
+                                    <!-- -->,
+                                  </div>
+                                  <div class="sc-1828ezo-0 cvXfkk">Required</div>
+                                </div>
+                                <input type="text" id="field--9-name" value="Backups" class="rvocnm-0 eOsxHn">
+                              </div>
+                              <div class="sc-1my9wkn-1 iVDLXM">
+                                <div class="tlqxhy-0 hQtDAG">
+                                  <label for="field--9-inline" class="tlqxhy-1 LZZQv">Inline</label>
+                                  <div class="tlqxhy-2 bmbQjk">
+                                    <input type="checkbox" id="field--9-inline" class="tlqxhy-3 cAnLIJ">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="gssc5a-0 kaKJzK">
+                              <div class="sc-1yo7zhc-0 evpIEG">
+                                <label for="field--9-value" class="sc-1l3alj9-0 bnXoKL">Field Value</label>
+                                <div class="sc-1828ezo-0 cvXfkk">535 / 1024
+                                  <!-- -->,
+                                </div>
+                                <div class="sc-1828ezo-0 cvXfkk">Required</div>
+                              </div>
+                              <textarea id="field--9-value" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 fjSbfQ">Not only can Webhook Manager send messages, but Webhook Manager can also save them for later use. For when your message wasn&#x27;t quite right.
+For convenience, backups also contain the webhook URL.
+
+Backups will not be sent to the Webhook Manager, and will always be stored offline. If you clear your browsing data, your backups will be lost *forever*!
+
+If you want to keep your backups somewhere else, you can export backups to get a saved copy. Do keep in mind that they also include the stored webhook URL, so don&#x27;t share it with anyone you don&#x27;t trust.</textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="button" class="d6epy7-0 cAQIzs">Add
+                          <!-- -->Field
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sc-7gu1c0-0 iXnZtL">
+                    <div class="sc-1h2kmjy-0 fHrToZ">
+                      <span class="sc-1h2kmjy-1 eiGELQ">Embed 4</span>
+                      <div class="sc-1h2kmjy-2 fNcbAb">
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Duplicate</button>
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Delete</button>
+                        <button type="button" class="sc-1h2kmjy-3 fsgmdW">Move Up</button>
+                      </div>
+                    </div>
+                    <div class="sc-1yo7zhc-0 kJxOZP">
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--10-title" class="sc-1l3alj9-0 bnXoKL">Title</label>
+                            <div class="sc-1828ezo-0 cvXfkk">12 / 256</div>
+                          </div>
+                          <input type="text" id="embed--10-title" value="Legal things" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--10-url" class="sc-1l3alj9-0 bnXoKL">Title URL</label>
+                          </div>
+                          <input type="text" id="embed--10-url" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                      </div>
+                      <div class="gssc5a-0 kaKJzK">
+                        <div class="sc-1yo7zhc-0 evpIEG">
+                          <label for="embed--10-description" class="sc-1l3alj9-0 bnXoKL">Description</label>
+                          <div class="sc-1828ezo-0 cvXfkk">459 / 2048</div>
+                        </div>
+                        <textarea id="embed--10-description" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 fjSbfQ">To make Webhook Manager as helpful as it can be, we use some assets derived from Discord&#x27;s application. Webhook Manager has no affiliation with Discord in any way, shape, or form.
+
+The source code to this app is [available on GitHub](https://github.com/Webhook Manager/Webhook Manager) licensed under the GNU Affero General Public License v3.0.
+If you need to contact me, you can join the [support server](https://Webhook Manager.org/discord), or send an email to &quot;hello&quot; at Webhook Manager.org.</textarea>
+                      </div>
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--10-author" class="sc-1l3alj9-0 bnXoKL">Author Name</label>
+                            <div class="sc-1828ezo-0 cvXfkk">0 / 256</div>
+                          </div>
+                          <input type="text" id="embed--10-author" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--10-authorurl" class="sc-1l3alj9-0 bnXoKL">Author URL</label>
+                          </div>
+                          <input type="text" id="embed--10-authorurl" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--10-authoricon" class="sc-1l3alj9-0 bnXoKL">Author Icon</label>
+                          </div>
+                          <input type="text" id="embed--10-authoricon" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                      </div>
+                      <div class="sc-1g41ufg-0 gHgrU">
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--10-footer" class="sc-1l3alj9-0 bnXoKL">Footer Text</label>
+                            <div class="sc-1828ezo-0 cvXfkk">0 / 2048</div>
+                          </div>
+                          <input type="text" id="embed--10-footer" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="gssc5a-0 kaKJzK">
+                          <div class="sc-1yo7zhc-0 evpIEG">
+                            <label for="embed--10-footericon" class="sc-1l3alj9-0 bnXoKL">Footer Icon</label>
+                          </div>
+                          <input type="text" id="embed--10-footericon" value="" class="rvocnm-0 eOsxHn">
+                        </div>
+                        <div class="sc-1yo7zhc-0 nh19xb-0 jHqbBK">
+                          <div class="gssc5a-0 kaKJzK">
+                            <div class="sc-1yo7zhc-0 evpIEG">
+                              <label for="embed--10-timestamp" class="sc-1l3alj9-0 bnXoKL">Timestamp</label>
+                            </div>
+                            <input type="text" id="embed--10-timestamp" value="" placeholder="YYYY-MM-DD hh:mm" class="rvocnm-0 eOsxHn">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sc-1yo7zhc-0 ra7leq-0 iTRCwG">
+                        <div class="sc-1yo7zhc-0 sc-1yuket3-0 iDroGT">
+                          <div class="gssc5a-0 kaKJzK">
+                            <div class="sc-1yo7zhc-0 evpIEG">
+                              <label for="embed--10-color" class="sc-1l3alj9-0 bnXoKL">Color</label>
+                            </div>
+                            <input type="text" id="embed--10-color" value="#f04747" placeholder="#rrggbb" class="rvocnm-0 eOsxHn">
+                          </div>
+                        </div>
+                        <button type="button" class="d6epy7-0 cAQIzs">Edit images</button>
+                      </div>
+                      <div class="sc-1yo7zhc-0 kJxOZP">
+                        <button type="button" class="d6epy7-0 cAQIzs">Add
+                          <!-- -->Field
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="d6epy7-0 cAQIzs">Add
+                    <!-- -->Embed
+                  </button>
+                </div>
+                <div class="sc-1g41ufg-0 gHgrU">
+                  <div class="gssc5a-0 kaKJzK">
+                    <div class="sc-1yo7zhc-0 evpIEG">
+                      <label for="message--1-username" class="sc-1l3alj9-0 bnXoKL">Override username</label>
+                      <div class="sc-1828ezo-0 cvXfkk">0 / 80</div>
+                    </div>
+                    <input type="text" id="message--1-username" value="" class="rvocnm-0 eOsxHn">
+                  </div>
+                  <div class="gssc5a-0 kaKJzK">
+                    <div class="sc-1yo7zhc-0 evpIEG">
+                      <label for="message--1-avatar" class="sc-1l3alj9-0 bnXoKL">Override avatar</label>
+                    </div>
+                    <input type="text" id="message--1-avatar" value="" class="rvocnm-0 eOsxHn">
+                  </div>
+                </div>
+                <div class="gssc5a-0 sc-1kuw07u-0 kCNlrR">
+                  <div class="sc-1yo7zhc-0 evpIEG">
+                    <label for="message--1-files" class="sc-1l3alj9-0 bnXoKL">Files (max 8MB)</label>
+                  </div>
+                  <div class="sc-1yo7zhc-0 evpIEG">
+                    <div class="sc-1kuw07u-1 jZRSio">
+                      <div type="text" class="rvocnm-0-div sc-1kuw07u-2 kIgBrR"></div>
+                      <input type="file" id="message--1-files" multiple="" class="sc-1kuw07u-3 ckTGse">
+                    </div>
+                    <input style="position:absolute;opacity:0;pointer-events:none">
+                    <button type="button" class="d6epy7-0 cAQIzs">Paste clipboard</button>
+                    <button type="button" class="d6epy7-0 cAQIzs">Remove files</button>
+                  </div>
+                </div>
+                <div class="gssc5a-0 kaKJzK">
+                  <label for="json" class="sc-1l3alj9-0 bnXoKL">JSON data</label>
+                  <textarea id="json" type="text" rows="3" class="rvocnm-0-textarea yr0gsk-0 dyrhet-2 hiHPcS">{
+  &quot;content&quot;: &quot;Welcome to &lt;:Webhook Manager:735474274458140705&gt;Webhook Manager, a free message and embed builder for Discord!\nThere&#x27;s additional info in the embeds below, or you can use the *Clear all* button in the editor to start making embeds.\nHave questions? Webhook Manager has a support server at &lt;https://Webhook Manager.org/discord&gt;.&quot;,
+  &quot;embeds&quot;: [
+    {
+      &quot;title&quot;: &quot;What&#x27;s all this?&quot;,
+      &quot;description&quot;: &quot;Webhook Manager is a free tool that allows you to build Discord messages and embeds for use in your server.\n\nWebhook Manager sends messages using *webhooks*, an API feature that allows third-party services to *blindly* send messages into text channels. While webhooks can send messages, they cannot respond to user interactions such as messages.&quot;,
+      &quot;color&quot;: 7506394
+    },
+    {
+      &quot;title&quot;: &quot;Text formatting how-tos&quot;,
+      &quot;description&quot;: &quot;There are a few basic styles you can take advantage of:\n*Italics*, by surrounding text in asterisks (\\*);\n**Bold**, by surrounding text in double asterisks (\\*\\*);\n__Underline__, by using double underscores (\\_\\_);\n~~Strikethrough~~, by using double tildes (\\~\\~);\n`Code`, by using backticks (\\`).&quot;,
+      &quot;color&quot;: 4437377,
+      &quot;fields&quot;: [
+        {
+          &quot;name&quot;: &quot;Advanced formatting&quot;,
+          &quot;value&quot;: &quot;Beyond these basic styles, you can also start a blockquote with a right-pointing angle bracket (&gt;):\n&gt; Hello.\nOr mark sensitive content behind a spoiler using two vertical bars (\\||):\n||This is hidden until clicked||&quot;
+        },
+        {
+          &quot;name&quot;: &quot;Using server emoji&quot;,
+          &quot;value&quot;: &quot;While default emoji work like you would expect them to, server emotes are a bit more complicated.\n\nTo send a server emoji with a webhook, you must use a specific formatting code to do so. To find it, send that emoji in your server, but put a backslash (\\\\) in front of it.\n\nFor example: sending `\\:my_emoji:` would send `&lt;:my_emoji:12345&gt;` into chat. If you copy the output into Webhook Manager, the emoji will show up properly.&quot;
+        },
+        {
+          &quot;name&quot;: &quot;Pinging users and roles, linking to channels&quot;,
+          &quot;value&quot;: &quot;First of all, you must have enabled developer mode in Discord&#x27;s settings. To do so, open Discord settings and navigate to Appearance. There will be a Developer Mode toggle under the Advanced section, which you must enable.\n\nHaving developer mode enabled, you can now right-click your target to copy their ID. Keep in mind that for users, you must right click their *avatar*, not the message.\n\nTo mention them, you have to use Discord&#x27;s mention syntax:\n`&lt;@!user_id&gt;`, `&lt;@&amp;role_id&gt;`, or `&lt;#channel_id&gt;`. If done correctly, they will appear as &lt;@!143419667677970434&gt; in the preview.&quot;
+        }
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Additional magic&quot;,
+      &quot;color&quot;: 16426522,
+      &quot;fields&quot;: [
+        {
+          &quot;name&quot;: &quot;Image galleries&quot;,
+          &quot;value&quot;: &quot;With some special magic, you can have up to 4 images in a single embed. This feature is exclusive to webhooks, so don&#x27;t expect to make it work on a traditional bot.\n\nAll you need is to give your embed a URL and click on the \&quot;Edit images\&quot; button inside any embed to get started.&quot;
+        },
+        {
+          &quot;name&quot;: &quot;Backups&quot;,
+          &quot;value&quot;: &quot;Not only can Webhook Manager send messages, but Webhook Manager can also save them for later use. For when your message wasn&#x27;t quite right.\nFor convenience, backups also contain the webhook URL.\n\nBackups will not be sent to the Webhook Manager, and will always be stored offline. If you clear your browsing data, your backups will be lost *forever*!\n\nIf you want to keep your backups somewhere else, you can export backups to get a saved copy. Do keep in mind that they also include the stored webhook URL, so don&#x27;t share it with anyone you don&#x27;t trust.&quot;
+        }
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Legal things&quot;,
+      &quot;description&quot;: &quot;To make Webhook Manager as helpful as it can be, we use some assets derived from Discord&#x27;s application. Webhook Manager has no affiliation with Discord in any way, shape, or form.\n\nThe source code to this app is [available on GitHub](https://github.com/Webhook Manager/Webhook Manager) licensed under the GNU Affero General Public License v3.0.\nIf you need to contact me, you can join the [support server](https://Webhook Manager.org/discord), or send an email to \&quot;hello\&quot; at Webhook Manager.org.&quot;,
+      &quot;color&quot;: 15746887
+    }
+  ]
+}</textarea>
+                  <button type="button" class="d6epy7-0 dyrhet-3 eqorQI">Apply JSON data</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="sc-1tupvqf-0 RmGSX"></div>
+      <div></div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": {
+          "pageProps": {
+            "message": {
+              "content": "Welcome to \u003c:Webhook Manager:735474274458140705\u003eWebhook Manager, a free message and embed builder for Discord!\nThere's additional info in the embeds below, or you can use the *Clear all* button in the editor to start making embeds.\nHave questions? Webhook Manager has a support server at \u003chttps://Webhook Manager.org/discord\u003e.",
+              "embeds": [{
+                "title": "What's all this?",
+                "description": "Webhook Manager is a free tool that allows you to build Discord messages and embeds for use in your server.\n\nWebhook Manager sends messages using *webhooks*, an API feature that allows third-party services to *blindly* send messages into text channels. While webhooks can send messages, they cannot respond to user interactions such as messages.",
+                "color": 7506394
+              }, {
+                "title": "Text formatting how-tos",
+                "description": "There are a few basic styles you can take advantage of:\n*Italics*, by surrounding text in asterisks (\\*);\n**Bold**, by surrounding text in double asterisks (\\*\\*);\n__Underline__, by using double underscores (\\_\\_);\n~~Strikethrough~~, by using double tildes (\\~\\~);\n`Code`, by using backticks (\\`).",
+                "color": 4437377,
+                "fields": [{
+                  "name": "Advanced formatting",
+                  "value": "Beyond these basic styles, you can also start a blockquote with a right-pointing angle bracket (\u003e):\n\u003e Hello.\nOr mark sensitive content behind a spoiler using two vertical bars (\\||):\n||This is hidden until clicked||"
+                }, {
+                  "name": "Using server emoji",
+                  "value": "While default emoji work like you would expect them to, server emotes are a bit more complicated.\n\nTo send a server emoji with a webhook, you must use a specific formatting code to do so. To find it, send that emoji in your server, but put a backslash (\\\\) in front of it.\n\nFor example: sending `\\:my_emoji:` would send `\u003c:my_emoji:12345\u003e` into chat. If you copy the output into Webhook Manager, the emoji will show up properly."
+                }, {
+                  "name": "Pinging users and roles, linking to channels",
+                  "value": "First of all, you must have enabled developer mode in Discord's settings. To do so, open Discord settings and navigate to Appearance. There will be a Developer Mode toggle under the Advanced section, which you must enable.\n\nHaving developer mode enabled, you can now right-click your target to copy their ID. Keep in mind that for users, you must right click their *avatar*, not the message.\n\nTo mention them, you have to use Discord's mention syntax:\n`\u003c@!user_id\u003e`, `\u003c@\u0026role_id\u003e`, or `\u003c#channel_id\u003e`. If done correctly, they will appear as \u003c@!143419667677970434\u003e in the preview."
+                }]
+              }, {
+                "title": "Additional magic",
+                "color": 16426522,
+                "fields": [{
+                  "name": "Image galleries",
+                  "value": "With some special magic, you can have up to 4 images in a single embed. This feature is exclusive to webhooks, so don't expect to make it work on a traditional bot.\n\nAll you need is to give your embed a URL and click on the \"Edit images\" button inside any embed to get started."
+                }, {
+                  "name": "Backups",
+                  "value": "Not only can Webhook Manager send messages, but Webhook Manager can also save them for later use. For when your message wasn't quite right.\nFor convenience, backups also contain the webhook URL.\n\nBackups will not be sent to the Webhook Manager, and will always be stored offline. If you clear your browsing data, your backups will be lost *forever*!\n\nIf you want to keep your backups somewhere else, you can export backups to get a saved copy. Do keep in mind that they also include the stored webhook URL, so don't share it with anyone you don't trust."
+                }]
+              }, {
+                "title": "Legal things",
+                "description": "To make Webhook Manager as helpful as it can be, we use some assets derived from Discord's application. Webhook Manager has no affiliation with Discord in any way, shape, or form.\n\nThe source code to this app is [available on GitHub](https://github.com/Webhook Manager/Webhook Manager) licensed under the GNU Affero General Public License v3.0.\nIf you need to contact me, you can join the [support server](https://Webhook Manager.org/discord), or send an email to \"hello\" at Webhook Manager.org.",
+                "color": 15746887
+              }]
+            },
+            "mobile": false
+          },
+          "__N_SSP": true
+        },
+        "page": "/",
+        "query": {},
+        "buildId": "8on8gJ15g2JFEYT8jUOlt",
+        "runtimeConfig": {},
+        "nextExport": false,
+        "isFallback": false,
+        "gssp": true
+      }
+    </script>
+    <script nomodule="" src="_next/static/chunks/polyfills-e6660b8f5b69a1653577.js"></script>
+    <script src="_next/static/chunks/main-b6c5840234b7d38172f7.js" async=""></script>
+    <script src="_next/static/chunks/webpack-f5dfe165f2a3e24f0847.js" async=""></script>
+    <script src="_next/static/chunks/framework.75810db27f2a2d2744b3.js" async=""></script>
+    <script src="_next/static/chunks/8313d723.1a9c1286488da8c7d802.js" async=""></script>
+    <script src="_next/static/chunks/commons.917a580f5043169d79fd.js" async=""></script>
+    <script src="_next/static/chunks/94e22a879ea83b0add8306b461de6417e3d648d6.e377f285cb343095366e.js" async=""></script>
+    <script src="_next/static/chunks/pages/_app-1f4b408f16b779ed372e.js" async=""></script>
+    <script src="_next/static/chunks/pages/index-03121bd5e805b76d2178.js" async=""></script>
+    <script src="_next/static/8on8gJ15g2JFEYT8jUOlt/_buildManifest.js" async=""></script>
+    <script src="_next/static/8on8gJ15g2JFEYT8jUOlt/_ssgManifest.js" async=""></script>
+  </body>
+</html>
